@@ -9,7 +9,9 @@
     "lint": "yarn run eslint ./src --max-warnings=0",
     "test": "yarn run jest",
     "test:watch": "yarn test",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "storybook": "start-storybook -s ./public -p 6006",
+    "build-storybook": "build-storybook"
   },
   "lint-staged": {
     "src/**/*": [
@@ -24,7 +26,12 @@
     "styled-components": "^5.2.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.13.13",
     "@babel/preset-typescript": "^7.13.0",
+    "@storybook/addon-actions": "^6.1.21",
+    "@storybook/addon-essentials": "^6.1.21",
+    "@storybook/addon-links": "^6.1.21",
+    "@storybook/react": "^6.1.21",
     "@testing-library/jest-dom": "^5.11.10",
     "@testing-library/react": "^11.2.5",
     "@types/jest": "^26.0.22",
@@ -33,6 +40,7 @@
     "@types/styled-components": "^5.1.9",
     "@typescript-eslint/eslint-plugin": "^4.19.0",
     "@typescript-eslint/parser": "^4.19.0",
+    "babel-loader": "^8.2.2",
     "babel-plugin-styled-components": "^1.12.0",
     "eslint": "^7.23.0",
     "eslint-config-prettier": "^8.1.0",

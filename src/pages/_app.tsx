@@ -13,8 +13,8 @@ function App({ Component, pageProps }: AppProps) {
         <link rel="apple-touch-icon" href="/favicon.ico" />
         <meta name="description" content="Description" />
       </Head>
-      <GlobalStyles />
       <ThemeProvider theme={theme}>
+        <GlobalStyles />
         <Component {...pageProps} />
       </ThemeProvider>
     </>
