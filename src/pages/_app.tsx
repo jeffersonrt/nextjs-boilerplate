@@ -10,7 +10,8 @@ function App({ Component, pageProps }: AppProps) {
       <Head>
         <title>Boilerplate</title>
         <link rel="shortcut icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" href="/favicon.ico" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="manifest" href="/manifest.json" />
         <meta name="description" content="Description" />
       </Head>
       <ThemeProvider theme={theme}>
